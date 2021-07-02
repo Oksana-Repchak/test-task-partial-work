@@ -121,20 +121,6 @@ ul {
   color: #ffffff;
 }
 
-@media screen and (min-width: 414px) {
-  .section-card:hover,
-  .section-card :focus {
-    height: 725px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section-card:hover,
-  .section-card :focus {
-    height: 705px;
-  }
-}
-
 .section-card:hover .card-title {
   color: #ffffff;
 }

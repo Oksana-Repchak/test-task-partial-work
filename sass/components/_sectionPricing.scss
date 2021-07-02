@@ -53,13 +53,13 @@
     background-color: #252b42;
     color: $text-accent;
 
-    @media screen and (min-width: 414px) {
-      height: 725px;
-    }
+    // @media screen and (min-width: 414px) {
+    //   height: 725px;
+    // }
 
-    @media screen and (min-width: 1200px) {
-      height: 705px;
-    }
+    // @media screen and (min-width: 1200px) {
+    //   height: 705px;
+    // }
   }
 
   &:hover .card-title {
