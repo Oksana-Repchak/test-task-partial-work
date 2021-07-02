@@ -18,14 +18,14 @@
   max-width: 470px;
   font-weight: 500;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1050px) {
     font-weight: 700;
   }
 }
 
 .section-cards {
   @extend %list;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1050px) {
     display: flex;
     justify-content: center;
   }
@@ -42,7 +42,7 @@
   &:not(:last-child) {
     margin-bottom: 30px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1050px) {
       margin-bottom: 0;
       margin-right: 2px;
     }
@@ -57,7 +57,7 @@
     //   height: 725px;
     // }
 
-    // @media screen and (min-width: 1200px) {
+    // @media screen and (min-width: 1050px) {
     //   height: 705px;
     // }
   }
@@ -183,6 +183,7 @@
   line-height: 1.57;
   text-align: center;
   letter-spacing: 0.2px;
+  cursor: pointer;
 
   transition: all 250ms $timing-function;
 
