@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: $background-text-color;
+  color: $primary-text-color;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 43px;
+  padding-right: 43px;
+  min-height: inherit;
+
+  @media screen and (min-width: 414px) {
+    width: 414px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}

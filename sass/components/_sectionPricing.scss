@@ -1,0 +1,193 @@
+.section-pricing {
+  text-align: center;
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
+
+.section-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.42;
+  color: inherit;
+}
+
+.section-text {
+  margin: 0 auto;
+  margin-bottom: 120px;
+  max-width: 470px;
+  font-weight: 500;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 700;
+  }
+}
+
+.section-cards {
+  @extend %list;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.section-card {
+  padding: 50px 40px;
+
+  border: 1px solid $accent-color;
+  border-radius: 10px;
+  transition: all 250ms $timing-function;
+  height: 665px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      margin-right: 2px;
+    }
+  }
+
+  &:hover,
+  :focus {
+    background-color: #252b42;
+    color: $text-accent;
+
+    @media screen and (min-width: 414px) {
+      height: 725px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      height: 705px;
+    }
+  }
+
+  &:hover .card-title {
+    color: $text-accent;
+  }
+
+  &:hover .card-description {
+    color: $text-accent;
+  }
+}
+
+.card-title {
+  margin-bottom: 35px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.1px;
+  color: #252b42;
+  transition: all 250ms $timing-function;
+}
+
+.card-description {
+  margin: 0 auto;
+  margin-bottom: 35px;
+  max-width: 160px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: #737373;
+  transition: all 250ms $timing-function;
+}
+
+.wrapper {
+  display: flex;
+  margin-bottom: 36px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-subscription {
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.42;
+  color: $accent-color;
+}
+
+.subscription-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subscription-currency {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: $accent-color;
+}
+
+.subscription-per {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.2px;
+  color: #8ec2f2;
+}
+
+.card-preference {
+  text-align: left;
+  margin-bottom: 35px;
+  font-weight: 600;
+}
+
+.preference {
+  @extend %list;
+
+  display: flex;
+
+  font-weight: 600;
+  line-height: 1.7;
+  color: inherit;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  &::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url("./../../images/circle-grean.svg");
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  &:nth-last-child(-n + 2)::before {
+    background-image: url("./../../images/circle-grey.svg");
+  }
+}
+
+.card-button {
+  margin: 0;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 82px;
+  min-width: 246px;
+
+  color: $text-accent;
+  background-color: $accent-color;
+
+  font-weight: 700;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  text-align: center;
+  line-height: 1.57;
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  transition: all 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background: #8ec2f2;
+  }
+}
