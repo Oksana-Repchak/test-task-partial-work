@@ -23,20 +23,20 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 43px;
-  padding-right: 43px;
+  padding-left: 15px;
+  padding-right: 15px;
   min-height: inherit;
 }
 
 @media screen and (min-width: 414px) {
   .container {
-    width: 414px;
+    max-width: 414px;
   }
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1080px) {
   .container {
-    width: 1050px;
+    max-width: 1050px;
   }
 }
 
@@ -78,13 +78,13 @@ ul {
   font-weight: 500;
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1080px) {
   .section-text {
     font-weight: 700;
   }
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1080px) {
   .section-cards {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -108,7 +108,7 @@ ul {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1080px) {
   .section-card:not(:last-child) {
     margin-bottom: 0;
     margin-right: 2px;
