@@ -156,13 +156,13 @@
     content: "";
     width: 32px;
     height: 32px;
-    background-image: url("./../../images/circle-grean.svg");
+    background-image: url("../../images/circle-grean.svg");
     display: inline-block;
     margin-right: 10px;
   }
 
   &:nth-last-child(-n + 2)::before {
-    background-image: url("./../../images/circle-grey.svg");
+    background-image: url("../../images/circle-grey.svg");
   }
 }
 
